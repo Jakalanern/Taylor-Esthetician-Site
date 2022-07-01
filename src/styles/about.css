@@ -1,0 +1,59 @@
+/* :root {
+  --clr: white;
+}
+
+.about {
+  position: relative;
+  background: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)),
+    url('../images/palms.JPG');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--clr);
+}
+
+.about-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about h1 {
+  width: max-content;
+  font-size: 62px;
+  padding: 0.15em 0em;
+  color: white;
+  margin: 0 auto;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+.about p {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.15em;
+  line-height: 1.5em;
+  padding: 0em 2.25em;
+}
+
+
+@media (min-width: 700px) {
+  .about {
+    display: grid;
+    place-items: center;
+  }
+
+  .book-now {
+    display: grid;
+    place-items: center;
+  }
+
+  .book-now h1 {
+    font-size: 128px;
+  }
+} */

@@ -1,0 +1,32 @@
+.mobile-nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 0em 2em;
+  margin-bottom: 4em;
+  text-align: center;
+}
+
+.mobile-nav-link {
+  font-size: max(7vw, 27px);
+}
+
+.mobile-nav-link:hover {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.798);
+}
+
+.mobile-book-link {
+  border: 1px solid white;
+  padding: 0.25em 1em;
+  font-weight: 700;
+  width: max-content;
+  margin: 0 auto;
+  transition: background 0.15s, color 0.15s;
+}
+
+.mobile-book-link:hover {
+  background: white;
+  color: black;
+}

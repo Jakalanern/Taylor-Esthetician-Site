@@ -1,0 +1,73 @@
+:root {
+  --clr: white;
+}
+
+.booking {
+  position: relative;
+  background: url('../images/sky\ dark.JPG');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--clr);
+  width: 100%;
+  height: 100%;
+}
+
+.book-now {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+  padding-top: 4em;
+}
+
+.booking h1 {
+  width: max-content;
+  font-size: 62px;
+  padding: 0.15em 0em;
+  color: white;
+  margin: 0 auto;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+}
+
+.booking button {
+  padding: 0.5rem 2rem;
+  background: none;
+  border: 2px solid rgba(255, 255, 255, 0.575);
+  border-radius: 0.5vmax;
+  color: var(--clr);
+  font-size: 1.5em;
+  background: rgba(0, 0, 0, 0.251);
+}
+
+.booking button:hover {
+  background: rgba(0, 0, 0, 0.37);
+}
+
+.about-container {
+  position: absolute;
+  bottom: 3vmax;
+  left: 0.15em;
+  font-size: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0em 1em;
+  writing-mode: vertical-rl;
+  cursor: pointer;
+  transition: transform 0.35s;
+}
+
+.about-arrow {
+  height: 2.5em;
+  font-size: 32px;
+}
+
+/* DESKTOP */
+@media (min-width: 875px) {
+  .book-now h1 {
+    font-size: 128px;
+  }
+}
