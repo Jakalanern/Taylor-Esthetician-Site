@@ -7,12 +7,48 @@ const MobileDropdown = ({
   scrollToAbout,
   setExpandedFalse,
   width,
-  dropdownRef,
   toggleButton,
+  scrollToServices,
 }) => {
   return (
-    <StyledMobileDropdown className='mobile-nav-dropdown' ref={dropdownRef}>
+    <StyledMobileDropdown className='mobile-nav-dropdown'>
       <ul className='mobile-nav-list'>
+        <li
+          className='mobile-nav-link mobile-home-link'
+          onClick={() => {
+            setExpandedFalse()
+            toggleButton()
+            scrollToHome()
+          }}>
+          HOME
+        </li>
+        <li
+          className='mobile-nav-link mobile-services-link'
+          onClick={() => {
+            setExpandedFalse()
+            toggleButton()
+            scrollToServices()
+          }}>
+          SERVICES
+        </li>
+        <li
+          className='mobile-nav-link mobile-about-link'
+          onClick={() => {
+            setExpandedFalse()
+            toggleButton()
+            scrollToAbout()
+          }}>
+          ABOUT ME
+        </li>
+        <li
+          className='mobile-nav-link mobile-contact-link'
+          onClick={() => {
+            setExpandedFalse()
+            toggleButton()
+            scrollToContact()
+          }}>
+          CONTACT
+        </li>
         <li
           className='mobile-nav-link mobile-book-link'
           onClick={() => {
@@ -27,24 +63,6 @@ const MobileDropdown = ({
             }
           }}>
           BOOK
-        </li>
-        <li
-          className='mobile-nav-link mobile-about-link'
-          onClick={() => {
-            scrollToAbout()
-            setExpandedFalse()
-            toggleButton()
-          }}>
-          ABOUT ME
-        </li>
-        <li
-          className='mobile-nav-link mobile-contact-link'
-          onClick={() => {
-            scrollToContact()
-            setExpandedFalse()
-            toggleButton()
-          }}>
-          CONTACT
         </li>
       </ul>
     </StyledMobileDropdown>

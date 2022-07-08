@@ -6,7 +6,7 @@ import { StyledSection } from './styles/Section.styled'
 import ArrowNav from './ArrowNav'
 import Collapse from './Collapse'
 import data from '../data/data-new.js'
-import img from '../images/black and white brow.jpg'
+import img from '../images/SERVICES FINAL.jpg'
 
 const Services = ({ fullpageApi, width }) => {
   const ref = useRef(null)

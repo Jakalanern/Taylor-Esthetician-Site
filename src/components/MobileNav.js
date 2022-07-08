@@ -37,6 +37,14 @@ const MobileNav = ({ width }) => {
     }
   }
 
+  const scrollToHome = () => {
+    window.fullpage_api.moveTo(1)
+  }
+
+  const scrollToServices = () => {
+    window.fullpage_api.moveTo(2)
+  }
+
   const scrollToAbout = () => {
     window.fullpage_api.moveTo(3)
   }
@@ -45,32 +53,28 @@ const MobileNav = ({ width }) => {
     window.fullpage_api.moveTo(4)
   }
 
-  const scrollToHome = () => {
-    window.fullpage_api.moveTo(1)
-  }
-
-  function useOutsideAlerter(ref, isExpanded) {
-    useEffect(() => {
-      /**
-       * Alert if clicked on outside of element
-       */
-      function handleClickOutside(event) {
-        if (ref.current && !ref.current.contains(event.target)) {
-          if (isExpanded) {
-            setExpandedFalse()
-          }
-        }
-      }
-      // Bind the event listener
-      document.addEventListener('mousedown', handleClickOutside)
-      return () => {
-        // Unbind the event listener on clean up
-        document.removeEventListener('mousedown', handleClickOutside)
-      }
-    }, [ref, isExpanded])
-  }
-  const dropdownRef = useRef(null)
-  useOutsideAlerter(dropdownRef, isExpanded)
+  // function useOutsideAlerter(ref, isExpanded) {
+  //   useEffect(() => {
+  //     /**
+  //      * Alert if clicked on outside of element
+  //      */
+  //     function handleClickOutside(event) {
+  //       if (ref.current && !ref.current.contains(event.target)) {
+  //         if (isExpanded) {
+  //           setExpandedFalse()
+  //         }
+  //       }
+  //     }
+  //     // Bind the event listener
+  //     document.addEventListener('mousedown', handleClickOutside)
+  //     return () => {
+  //       // Unbind the event listener on clean up
+  //       document.removeEventListener('mousedown', handleClickOutside)
+  //     }
+  //   }, [ref, isExpanded])
+  // }
+  // const dropdownRef = useRef(null)
+  // useOutsideAlerter(dropdownRef, isExpanded)
 
   return (
     <StyledMobileNav className='mobile-nav'>
@@ -85,8 +89,8 @@ const MobileNav = ({ width }) => {
         scrollToAbout={scrollToAbout}
         scrollToContact={scrollToContact}
         scrollToHome={scrollToHome}
+        scrollToServices={scrollToServices}
         setExpandedFalse={setExpandedFalse}
-        dropdownRef={dropdownRef}
         toggleButton={toggleButton}
         width={width}
       />
@@ -95,7 +99,6 @@ const MobileNav = ({ width }) => {
         toggleExpanded={toggleExpanded}
         isActive={isActive}
         toggleButton={toggleButton}
-        dropdownRef={dropdownRef}
       />
     </StyledMobileNav>
   )

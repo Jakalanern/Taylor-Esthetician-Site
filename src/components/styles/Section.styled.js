@@ -13,6 +13,10 @@ export const StyledSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   text-align: center;
+
+  @media (max-width: 875px) {
+    justify-content: flex-start;
+  }
 `

@@ -16,10 +16,11 @@ const Home = ({ fullpageApi }) => {
 
   const mainTitleStyles = {
     position: 'absolute',
-    top: '100px',
+    top: '125px',
     right: '0',
     left: '0',
     paddingTop: '10px',
+    fontSize: '',
   }
 
   return (
@@ -29,7 +30,7 @@ const Home = ({ fullpageApi }) => {
         <StyledTitle margin={'auto 0'} style={mainTitleStyles} id='main-title'>
           ESTHETICS
           <br />
-          BY TAY
+          <h5 style={{ fontWeight: '400' }}>BY TAY</h5>
         </StyledTitle>
       </div>
     </main>

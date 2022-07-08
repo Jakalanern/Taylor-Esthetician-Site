@@ -1,5 +1,5 @@
 import React from 'react'
-import img from '../images/new-4.jpg'
+import img from '../images/CONTACT FINAL.jpg'
 import { StyledButton } from './styles/Button.styled'
 import { StyledSection } from './styles/Section.styled'
 import { StyledTitle } from './styles/Title.styled'

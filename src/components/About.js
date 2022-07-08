@@ -1,6 +1,6 @@
 import React from 'react'
 import ArrowNav from './ArrowNav'
-import img from '../images/sand.jpg'
+import img from '../images/ABOUT FINAL.jpg'
 import { StyledTitle } from './styles/Title.styled'
 import { StyledSection } from './styles/Section.styled'
 import { StyledParagraph } from './styles/Paragraph.styled'
